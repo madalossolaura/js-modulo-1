@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Módulo 1 - JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript 1</h1>
+    <p>Verifique o console <3</p>
+    <script>
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+        function mostrarEnd(endereco){
+            return (
+                "O usuário mora em " +
+                endereco.cidade +
+                " / " +
+                endereco.uf +
+                ", no bairro " +
+                endereco.bairro +
+                ', na rua "' +
+                endereco.rua +
+                '" com nº ' +
+                endereco.numero +
+                "."
+            );
+        }
+
+        console.log(mostrarEnd(endereco));
+    </script>
+</body>
+</html>
